@@ -40,6 +40,9 @@ Plugin 'sickill/vim-monokai'
 call vundle#end()
 filetype plugin indent on
 
+" vim-notes
+let g:notes_directories = ['~/Dropbox/vim-notes']
+
 " vim-quickhl
 let g:quickhl_cword_enable_at_startup = 1
 let g:quickhl_cword_hl_command = 'link QuickhlCword Visual'
