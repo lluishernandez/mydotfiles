@@ -33,9 +33,10 @@ Plugin 'scrooloose/syntastic'
 Plugin 'hdima/python-syntax'
 Plugin 'nvie/vim-flake8'
 Plugin 't9md/vim-quickhl'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
 Plugin 'klen/python-mode'
 Plugin 'sickill/vim-monokai'
-
 call vundle#end()
 filetype plugin indent on
 
