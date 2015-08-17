@@ -42,6 +42,7 @@ filetype plugin indent on
 
 " vim-notes
 let g:notes_directories = ['~/Dropbox/vim-notes']
+let g:notes_smart_quotes = 0
 
 " vim-quickhl
 let g:quickhl_cword_enable_at_startup = 1
