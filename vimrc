@@ -36,6 +36,7 @@ Plugin 't9md/vim-quickhl'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'klen/python-mode'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install'  }
 Plugin 'sickill/vim-monokai'
 call vundle#end()
 filetype plugin indent on
@@ -50,7 +51,7 @@ let g:quickhl_cword_hl_command = 'link QuickhlCword Visual'
 
 " FZF
 set rtp+=~/.fzf
-nnoremap <C-v> :FZF<CR>
+map F :FZF<CR>
 
 " Syntastic
 set statusline+=%#warningmsg#
