@@ -1,0 +1,16 @@
+######### Add the following lines to your .bashrc
+## if [ -d ~/mydotfiles ]; then
+##    if [ -f ~/mydotfiles/mybashrc ]; then
+##        source ~/mydotfiles/mybashrc
+##    fi
+## fi
+
+function glog {
+   git log --graph --all --format=format:"%x09%C(yellow)%h%C(reset) %C(green)%ai%x08%x08%x08%x08%x08%x08%C(reset) %C(bold white)%cn%C(reset)%C(auto)%d%C(reset)%n%x09%C(white)%s%C(reset)" --abbrev-commit "$@"
+   echo
+} 
+
+# To keep bash history even when multiple terminals close
+export HISTCONTROL=ignoredups:erasedups  
+shopt -s histappend
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
